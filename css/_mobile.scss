@@ -8,6 +8,11 @@
     display: table;
 }
 
+body{
+font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------- Main container for all grids ------------------- */
 .container{  display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -21,33 +26,51 @@
       "contact experience"
       "education experience";
 }
-  
+
+/* ------------------- Header container ------------------- */
 .header{
+    outline: 1px solid black;
     grid-area: header; 
+    background-image: url("../images/header_background.jpg"); /* ---- Image by kjpargeter on Freepik ---- */
+    background-size: cover;
 }
 
 .header_face{
     border-radius: 50%;
     width: 125px;
 }
-  
+
+.header_text{
+    color: rgb(236, 236, 236);
+    text-transform: uppercase;
+}
+
+header h1{
+    margin:0
+}
+
+/* ------------------- Personal container ------------------- */
 .personal{ 
+    outline: 1px solid black;
     grid-area: personal; 
 }
-  
+/* ------------------- Skills container ------------------- */
 .skills{ 
+    outline: 1px solid black;
     grid-area: skills; 
 }
-  
+/* ------------------- Contact container ------------------- */
 .contact{ 
+    outline: 1px solid black;
     grid-area: contact; 
 }
-  
+/* ------------------- Education container ------------------- */
 .education{ 
+    outline: 1px solid black;
     grid-area: education; 
 }
-  
+/* ------------------- Experience container ------------------- */
 .experience{ 
+    outline: 1px solid black;
     grid-area: experience; 
 }
-  
